@@ -1,3 +1,8 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-void */
+/* eslint-disable no-cond-assign */
+/* eslint-disable no-nested-ternary */
+/* eslint-disable prefer-rest-params */
 import 'antd/es/message/style';
 import _message from 'antd/es/message';
 import axios from 'axios';
@@ -15,7 +20,7 @@ const instance = axios.create({
   // 只能用在 'PUT', 'POST' 和 'PATCH' 这几个请求方法
   // 后面数组中的函数必须返回一个字符串，或 ArrayBuffer，或 Stream
   transformRequest: [
-    function(data) {
+    function (data) {
       const config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       // 页面请求Headers增加打标信息
       config.common = Object.assign(
@@ -67,7 +72,7 @@ const instance = axios.create({
   ],
   // `transformResponse` 在传递给 then/catch 前，允许修改响应数据
   transformResponse: [
-    function(response) {
+    function (response) {
       return response;
     },
   ],

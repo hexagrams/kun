@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './index.module.less';
+
 export default () => {
-  let indexHref = '#/';
+  const indexHref = '#/';
   return (
     <div className={styles.basicnotfound}>
       <div className={styles.exceptioncontent}>
