@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卦</title>
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1185901_tjdn44ryex.css">
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    window.SYSTEM_CONFIG = {
+      productList: {
+        system: {
+          appConfig: {
+            path: ['/system'],
+            url: ['http://localhost:8001/app.js','http://localhost:8001/main.css'],
+            title: "haha2121"
+          }
+        }
+      },
+      routerConfig: {
+        menuLeftOption:{
+          menuConfig:{
+            defaultSelectedKeys: ['/system/product']
+          },
+          menuLeft: [
+            {url: '/system/product', title: '产品管理', icon: 'icon-baocun' },
+            {url: '2', title: '首页2', icon: 'icon-baocun', children: [{url: '21', title: '首页2'}]}
+          ]
+        }
+      }
+    }
+  </script>
+</body>
+</html>
+
