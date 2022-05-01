@@ -1,4 +1,13 @@
 .canvas {
   height: 100%;
   width: 100%;
+  :global {
+    .layout {
+      min-height: 100%;
+      .canvas-item {
+        overflow: hidden;
+        background-color: yellow;
+      }
+    }
+  }
 }
