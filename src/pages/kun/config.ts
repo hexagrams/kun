@@ -1,0 +1,32 @@
+export const layout = [
+  {
+    i: '1651409911423',
+    h: 20,
+    w: 20,
+    x: 45,
+    y: 242,
+    static: false,
+    isDraggable: true,
+    moved: true,
+  },
+  {
+    w: 20,
+    h: 20,
+    x: 34,
+    y: 390,
+    i: '1651409912287',
+    moved: true,
+    static: false,
+    isDraggable: true,
+  },
+  {
+    i: '1651409913641',
+    h: 200,
+    w: 20,
+    x: 24,
+    y: 156,
+    static: false,
+    isDraggable: true,
+    moved: true,
+  },
+];
