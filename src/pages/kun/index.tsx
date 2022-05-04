@@ -6,7 +6,7 @@ import { layout } from './config';
 import styles from './index.less';
 
 function Kun() {
-  const [canvasData, setCanvasData] = useState<any>(layout);
+  const [canvasData, setCanvasData] = useState<Layout[]>(layout);
 
   const onDrop = useCallback(
     (_layout: Layout[], _item: Layout, e: any) => {
