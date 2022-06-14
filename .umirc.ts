@@ -11,6 +11,7 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
+  fastRefresh: {},
   webpack5: {}, // 启动webpack5
   locale: {
     default: 'zh-CN',
@@ -19,6 +20,8 @@ export default defineConfig({
     baseNavigator: true,
     baseSeparator: '-',
   },
+  mfsu: {},
+  esbuild: {},
   externals: {},
   scripts: [],
   alias: {
